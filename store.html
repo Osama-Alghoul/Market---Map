@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة المساعدة | المتجر</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <!-- Empty div for logo as requested -->
+                <div id="logo"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="map.html">الخريطة</a></li>
+                    <li><a href="store.html" class="active">المتجر</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                    <li><a href="start-store.html">ابدأ متجرك الخاص</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>المتجر الإلكتروني</h1>
+                <p>تصفح المنتجات المحلية وتواصل مع البائعين مباشرة</p>
+            </div>
+        </section>
+
+        <section class="store-filters">
+            <div class="container">
+                <div class="search-filter">
+                    <input type="text" placeholder="ابحث عن منتجات..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="category-filters">
+                    <h3>تصفية حسب الفئة</h3>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" checked> الكل
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox"> منتجات غذائية
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox"> ملابس
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox"> منتجات يدوية
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox"> أثاث
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox"> إلكترونيات
+                        </label>
+                    </div>
+                </div>
+                <div class="location-filters">
+                    <h3>تصفية حسب الموقع</h3>
+                    <select class="location-select">
+                        <option value="">جميع المواقع</option>
+                        <option value="location1">المدينة 1</option>
+                        <option value="location2">المدينة 2</option>
+                        <option value="location3">المدينة 3</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="منتج 1">
+                        </div>
+                        <div class="product-info">
+                            <h3>منتج يدوي تقليدي</h3>
+                            <p class="product-description">منتج محلي مصنوع يدويًا بجودة عالية من مواد طبيعية</p>
+                            <div class="product-meta">
+                                <span class="category">منتجات يدوية</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> المدينة 1</span>
+                            </div>
+                            <div class="product-contact">
+                                <button class="contact-btn"><i class="fas fa-phone"></i> اتصل بالبائع</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="منتج 2">
+                        </div>
+                        <div class="product-info">
+                            <h3>منتجات غذائية طازجة</h3>
+                            <p class="product-description">منتجات غذائية طازجة من المزارع المحلية بأسعار مناسبة</p>
+                            <div class="product-meta">
+                                <span class="category">منتجات غذائية</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> المدينة 2</span>
+                            </div>
+                            <div class="product-contact">
+                                <button class="contact-btn"><i class="fas fa-phone"></i> اتصل بالبائع</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="منتج 3">
+                        </div>
+                        <div class="product-info">
+                            <h3>ملابس تقليدية</h3>
+                            <p class="product-description">ملابس تقليدية مصنوعة يدويًا بتصاميم فريدة</p>
+                            <div class="product-meta">
+                                <span class="category">ملابس</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> المدينة 1</span>
+                            </div>
+                            <div class="product-contact">
+                                <button class="contact-btn"><i class="fas fa-phone"></i> اتصل بالبائع</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="منتج 4">
+                        </div>
+                        <div class="product-info">
+                            <h3>أثاث منزلي</h3>
+                            <p class="product-description">أثاث منزلي مصنوع من مواد عالية الجودة بأسعار معقولة</p>
+                            <div class="product-meta">
+                                <span class="category">أثاث</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> المدينة 3</span>
+                            </div>
+                            <div class="product-contact">
+                                <button class="contact-btn"><i class="fas fa-phone"></i> اتصل بالبائع</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="منتج 5">
+                        </div>
+                        <div class="product-info">
+                            <h3>إلكترونيات مستعملة</h3>
+                            <p class="product-description">أجهزة إلكترونية مستعملة بحالة جيدة وأسعار مناسبة</p>
+                            <div class="product-meta">
+                                <span class="category">إلكترونيات</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> المدينة 2</span>
+                            </div>
+                            <div class="product-contact">
+                                <button class="contact-btn"><i class="fas fa-phone"></i> اتصل بالبائع</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="منتج 6">
+                        </div>
+                        <div class="product-info">
+                            <h3>منتجات منزلية</h3>
+                            <p class="product-description">منتجات منزلية متنوعة للاستخدام اليومي</p>
+                            <div class="product-meta">
+                                <span class="category">منتجات منزلية</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> المدينة 3</span>
+                            </div>
+                            <div class="product-contact">
+                                <button class="contact-btn"><i class="fas fa-phone"></i> اتصل بالبائع</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pagination">
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn next"><i class="fas fa-chevron-left"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن المنصة</h3>
+                    <p>منصة لمساعدة المتضررين من الحرب على عرض منتجاتهم والوصول إلى الأسواق المحلية</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="map.html">الخريطة</a></li>
+                        <li><a href="store.html">المتجر</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                        <li><a href="start-store.html">ابدأ متجرك الخاص</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تواصل معنا</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@example.com</p>
+                        <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                    </div>
+                    <div class="social-links">  +123 456 7890</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 منصة المساعدة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة المساعدة | الخريطة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <!-- Empty div for logo as requested -->
+                <div id="logo"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="map.html" class="active">الخريطة</a></li>
+                    <li><a href="store.html">المتجر</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                    <li><a href="start-store.html">ابدأ متجرك الخاص</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>الخريطة التفاعلية</h1>
+                <p>اكتشف أماكن توزيع المساعدات والأسواق الشعبية والمزيد</p>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <div class="map-filters">
+                    <h3>تصفية النتائج</h3>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" checked> أماكن توزيع المساعدات
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" checked> الأسواق الشعبية
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" checked> المتاجر المحلية
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" checked> مراكز الإيواء
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <div id="map">
+                        <!-- Basic map placeholder - will be replaced with actual map -->
+                        <img src="/placeholder.svg?height=600&width=1000" alt="خريطة تفاعلية">
+                    </div>
+                </div>
+
+                <div class="map-legend">
+                    <h3>مفتاح الخريطة</h3>
+                    <ul>
+                        <li><span class="legend-icon aid"></span> أماكن توزيع المساعدات</li>
+                        <li><span class="legend-icon market"></span> الأسواق الشعبية</li>
+                        <li><span class="legend-icon store"></span> المتاجر المحلية</li>
+                        <li><span class="legend-icon shelter"></span> مراكز الإيواء</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="location-list">
+            <div class="container">
+                <h2>قائمة المواقع</h2>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div class="location-info">
+                            <h3>مركز توزيع المساعدات الرئيسي</h3>
+                            <p>وصف مختصر للمكان وساعات العمل</p>
+                            <div class="location-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> العنوان: شارع الرئيسي، المدينة</span>
+                                <span><i class="fas fa-clock"></i> ساعات العمل: 9 صباحًا - 5 مساءً</span>
+                                <span><i class="fas fa-phone"></i> رقم الاتصال: 123-456-789</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="location-info">
+                            <h3>السوق الشعبي المركزي</h3>
+                            <p>وصف مختصر للمكان وساعات العمل</p>
+                            <div class="location-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> العنوان: شارع التجاري، المدينة</span>
+                                <span><i class="fas fa-clock"></i> ساعات العمل: 8 صباحًا - 8 مساءً</span>
+                                <span><i class="fas fa-phone"></i> رقم الاتصال: 123-456-789</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="location-info">
+                            <h3>مركز الإيواء الرئيسي</h3>
+                            <p>وصف مختصر للمكان والخدمات المتوفرة</p>
+                            <div class="location-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> العنوان: شارع السكني، المدينة</span>
+                                <span><i class="fas fa-clock"></i> متاح على مدار 24 ساعة</span>
+                                <span><i class="fas fa-phone"></i> رقم الاتصال: 123-456-789</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن المنصة</h3>
+                    <p>منصة لمساعدة المتضررين من الحرب على عرض منتجاتهم والوصول إلى الأسواق المحلية</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="map.html">الخريطة</a></li>
+                        <li><a href="store.html">المتجر</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                        <li><a href="start-store.html">ابدأ متجرك الخاص</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تواصل معنا</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@example.com</p>
+                        <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 منصة المساعدة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
